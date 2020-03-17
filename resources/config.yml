@@ -1,0 +1,18 @@
+---
+# Developed by CubePM (TheAz928)
+# CubeBox configuration file
+
+# Version, recommended not to change
+version: "1.0.0"
+
+# Enable particles for crates
+particles: true
+
+# Key item settings
+# Key item ID:META
+key: "tripwire_hook:0"
+
+# NOTE: You can add a string nbt tag named "crate" with value of the crateId
+#       And it'll automatically change to that crate's key.
+
+...

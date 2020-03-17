@@ -1,0 +1,62 @@
+---
+# Developed by TheAz928
+# Example crate configuration file
+
+# Crate ID, this must be unique and a text(string)
+id: example
+
+# Crate name, use '&' for color codes
+name: "&eExample"
+
+# Description of the crate
+# This is shown on the crate key
+description:
+- "Just try it"
+- "&cTrust me it's cool"
+
+# Display text
+# One line is shown every 5s under crate name
+display:
+- "&7Try your luck now!"
+- "&cYou've a chance to win WHOAH items!"
+- "&bDon't miss out the deal!!"
+
+# Crate cost settings
+# The amount of money needed to open this crate
+# Set -1 to disable buying with money
+money-cost: 0
+
+# The amount of xp needed to open this crate
+# Set -1 to disable buying with xp
+xp-cost: 0
+
+# Crate particle color settings
+# Format: [RED(0-255), BLUE(0-255), GREEN(0-255), ALPHA(0-255)]
+RGBA: [0, 0, 0, 255]
+
+# Crate rewards settings
+# Command tags: .player. .x. .y. .z. .world. .display_name. .nametag.
+rewards:
+- item: "golden_apple"
+  count: 1
+  customName: "&eReally Rare Golden Apple"
+  nbt: null
+  rarityString: "&5Super Epic" # leave this "" if you don't want to show rarity above items
+  lore:
+  - "Just eat it and see for yourself"
+  enchants:
+  - protection 1
+  chance: 40
+  commands:
+  - "say .player. got an amazing apple at world .world. standing at .x. .y. .z."
+- item: "apple"
+  count: 1
+  customName: null
+  nbt: null
+  rarityString: ""
+  lore: []
+  enchants: []
+  chance: 80
+  commands: []
+
+...

@@ -1,0 +1,18 @@
+---
+name: CubeBox
+version: 1.0.0
+api: 3.0.0
+author: TheAz928
+main: TheAz928\CubeBox\Loader
+description: "Advanced crate system for PocketMine-MP"
+depend: ["EconomyAPI"]
+commands:
+  cbx:
+    description: "CubeBox main command"
+    permission: "cbx.cmd"
+permissions:
+  cbx.cmd:
+    default: op
+    description: ""
+
+...
