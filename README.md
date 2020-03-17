@@ -39,4 +39,4 @@ If you have any issues with the plugin or want any features to be added, make an
 Examples of how to use the plugin is included in the plugin.
 
 ### Copyright (C): [TheAz928](https://github.com/TheAz928)
-### Download: [Here](https://poggit.pmmp.io/ci/CubePM/CubeBox/CubeBox)
+### Download: [Poggit](https://poggit.pmmp.io/ci/CubePM/CubeBox/CubeBox) or [GitHub](https://github.com/CubePM/CubeBox/releases)
