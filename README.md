@@ -35,7 +35,7 @@ Tired of using non-animated crates or only GUI animations? Well wait no more!
 | :---: | :---: |
 [![View Count](http://hits.dwyl.io/CubePM/CubeBox.svg)](http://hits.dwyl.io/CubePM/CubeBox) | <a href="https://discord.gg/2Nvgysk"><img src="https://discordapp.com/api/guilds/425712766687510528/embed.png" alt="Discord server"/></a> |
 
-If you have any issues with the plugin or want any features to be added, make an issue [here](https://github.com/CubePM/MysteryBox/issues/new).
+If you have any issues with the plugin or want any features to be added, make an issue [here](https://github.com/CubePM/CubeBox/issues/new).
 Examples of how to use the plugin is included in the plugin.
 
 ### Copyright (C): [TheAz928](https://github.com/TheAz928)
