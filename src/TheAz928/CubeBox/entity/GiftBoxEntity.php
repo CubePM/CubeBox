@@ -2,11 +2,14 @@
 namespace TheAz928\CubeBox\entity;
 
 use onebone\economyapi\EconomyAPI;
+
 use pocketmine\command\ConsoleCommandSender;
 
 use pocketmine\entity\Human;
 
 use pocketmine\entity\object\ItemEntity;
+
+use pocketmine\event\entity\EntityDamageEvent;
 
 use pocketmine\level\particle\ExplodeParticle;
 use pocketmine\level\particle\HappyVillagerParticle;
@@ -92,6 +95,13 @@ class GiftBoxEntity extends Human {
      */
     public function getTile(): CrateTile {
         return $this->tile;
+    }
+
+    /**
+     * @param EntityDamageEvent $source
+     */
+    public function attack(EntityDamageEvent $source): void {
+
     }
 
     /**

@@ -164,7 +164,11 @@ class Loader extends PluginBase implements Listener {
                     $player->sendMessage(TextFormat::GRAY . "[CubeBox] That crate is already in use, please wait!");
                 }
             }else{
-                $player->sendForm(new ConfirmOpenForm($tile));
+                if($tile->getCrate()->getMoneyCost() > -1 or $tile->getCrate()->getXpCost() > -1){
+                    $player->sendForm(new ConfirmOpenForm($tile));
+                }else{
+                    $player->sendMessage(TextFormat::GRAY . "[CubeBox] You need a key to open this crate!");
+                }
             }
         }
     }
