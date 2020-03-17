@@ -4,7 +4,7 @@ version: 1.0.0
 api: 3.0.0
 author: TheAz928
 main: TheAz928\CubeBox\Loader
-description: "Advanced crate system for PocketMine-MP"
+description: "The next level crate system for PocketMine-MP"
 depend: ["EconomyAPI"]
 commands:
   cbx:
