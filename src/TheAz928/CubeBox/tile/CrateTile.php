@@ -125,7 +125,9 @@ class CrateTile extends Spawnable {
     public function close(): void {
         parent::close();
 
-        $this->displayEntity->flagForDespawn();
+        if($this->displayEntity !== null){
+            $this->displayEntity->flagForDespawn();
+        }
     }
 
     /**
@@ -206,7 +208,9 @@ class CrateTile extends Spawnable {
                     $this->displayCounter = 0;
                 }
             }
-            $this->getDisplayEntity()->setNameTag($this->getCrate()->getName() . "\n\n" . TextFormat::RESET . $display);
+            if($this->getDisplayEntity()->isClosed() == false){
+                $this->getDisplayEntity()->setNameTag($this->getCrate()->getName() . "\n\n" . TextFormat::RESET . $display);
+            }
         }
 
         return true;

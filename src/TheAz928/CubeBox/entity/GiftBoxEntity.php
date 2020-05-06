@@ -196,9 +196,11 @@ class GiftBoxEntity extends Human {
                     $rarity .= "\n";
                 }
 
-                $this->rewardItem = $this->getLevel()->dropItem($this, $reward->getItem(), new Vector3(0, 0, 0), 12000);
-                $this->rewardItem->setNameTag($rarity . $reward->getItem()->getName());
-                $this->rewardItem->setNameTagAlwaysVisible(true);
+                if($reward->getItem()->isNull() == false){
+                    $this->rewardItem = $this->getLevel()->dropItem($this, $reward->getItem(), new Vector3(0, 0, 0), 12000);
+                    $this->rewardItem->setNameTag($rarity . $reward->getItem()->getName());
+                    $this->rewardItem->setNameTagAlwaysVisible(true);
+                }
 
                 $this->getOpener()->getInventory()->addItem($reward->getItem());
             }else{
@@ -207,6 +209,7 @@ class GiftBoxEntity extends Human {
         }
         if($this->timeCounter > (20 * 11)){
             $this->flagForDespawn();
+
             if($this->rewardItem !== null){
                 $this->rewardItem->flagForDespawn();
             }
