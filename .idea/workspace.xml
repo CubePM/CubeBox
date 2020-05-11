@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9bc0b17f-3a4b-4928-9eb1-c47a6ad1402f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TheAz928/CubeBox/Loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TheAz928/CubeBox/Loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/FloatingText.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/FloatingText.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TheAz928/CubeBox/form/ConfirmOpenForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TheAz928/CubeBox/form/ConfirmOpenForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,38 +24,39 @@
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.235" value="1" />
           <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.84" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="2" />
-          <entry key="php" value="54" />
+          <entry key="php" value="66" />
           <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="54" />
+          <entry key="PHP" value="66" />
           <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="4" />
-          <entry key="php" value="11941" />
+          <entry key="php" value="12569" />
           <entry key="txt" value="41" />
-          <entry key="yml" value="2019" />
+          <entry key="yml" value="2025" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="PHP" value="11941" />
+          <entry key="PHP" value="12569" />
           <entry key="PLAIN_TEXT" value="41" />
-          <entry key="YAML" value="2019" />
+          <entry key="YAML" value="2025" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -70,20 +77,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="288">
+              <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+              <folding>
+                <element signature="e#40#67#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+              <folding>
+                <element signature="e#42#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/Loader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="169" column="108" selection-start-line="169" selection-start-column="108" selection-end-line="169" selection-end-column="108" />
+            <state relative-caret-position="-213">
+              <caret line="149" column="61" lean-forward="true" selection-start-line="149" selection-start-column="61" selection-end-line="149" selection-end-column="61" />
               <folding>
                 <element signature="e#35#67#0#PHP" expanded="true" />
               </folding>
@@ -104,14 +126,14 @@
         <option value="$PROJECT_DIR$/resources/gift.box.json" />
         <option value="$PROJECT_DIR$/resources/crates/example.yml" />
         <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/crate/Reward.php" />
-        <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/FloatingText.php" />
         <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/crate/Crate.php" />
-        <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php" />
         <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/Utils.php" />
+        <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/FloatingText.php" />
+        <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php" />
         <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/form/ConfirmOpenForm.php" />
         <option value="$PROJECT_DIR$/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php" />
         <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/Loader.php" />
+        <option value="$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php" />
       </list>
     </option>
   </component>
@@ -128,7 +150,7 @@
       <path value="$PROJECT_DIR$/../../../Files/EconomyAPI" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="180" />
     <option name="width" value="1386" />
     <option name="height" value="735" />
@@ -210,6 +232,10 @@
               <item name="CubeBox" type="462c0819:PsiDirectoryNode" />
               <item name="tile" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CubeBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -218,7 +244,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Files/EconomyAPI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -253,17 +279,18 @@
       <workItem from="1584440801032" duration="360000" />
       <workItem from="1584450659232" duration="963000" />
       <workItem from="1585294034610" duration="77000" />
+      <workItem from="1589141937429" duration="4305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25824000" />
+    <option name="totallyTimeSpent" value="30129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -338,24 +365,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/tile/Tile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="238" column="20" selection-start-line="238" selection-start-column="20" selection-end-line="238" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../src/pocketmine/level/particle/DustParticle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/level/Level.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="1662" column="23" selection-start-line="1662" selection-start-column="23" selection-end-line="1662" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -387,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/block/EnderChest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="65" column="19" lean-forward="true" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -418,27 +424,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/entity/FloatingText.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/crate/Crate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#40#67#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,20 +441,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/crates/example.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/level/Level.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="1664" column="45" lean-forward="true" selection-start-line="1664" selection-start-column="45" selection-end-line="1664" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/entity/object/ItemEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/entity/FloatingText.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="e#42#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/form/ConfirmOpenForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="51" column="288" lean-forward="true" selection-start-line="51" selection-start-column="288" selection-end-line="51" selection-end-column="288" />
+        <state relative-caret-position="144">
+          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
           <folding>
             <element signature="e#40#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/crates/example.yml">
+    <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        <state relative-caret-position="589">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+          <folding>
+            <element signature="e#42#76#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -476,19 +497,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/entity/GiftBoxEntity.php">
+    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/tile/Tile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="191">
+          <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/block/Chest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/pocketmine/block/EnderChest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/Loader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="169" column="108" selection-start-line="169" selection-start-column="108" selection-end-line="169" selection-end-column="108" />
+        <state relative-caret-position="-213">
+          <caret line="149" column="61" lean-forward="true" selection-start-line="149" selection-start-column="61" selection-end-line="149" selection-end-column="61" />
           <folding>
             <element signature="e#35#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TheAz928/CubeBox/tile/CrateTile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+          <folding>
+            <element signature="e#40#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

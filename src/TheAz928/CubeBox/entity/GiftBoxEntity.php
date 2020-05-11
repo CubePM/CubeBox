@@ -81,6 +81,7 @@ class GiftBoxEntity extends Human {
         parent::initEntity();
 
         $this->setScale(0.5);
+        $this->setCanSaveWithChunk(false);
     }
 
     /**
@@ -118,8 +119,8 @@ class GiftBoxEntity extends Human {
             $this->getTile()->setIsInUse(false);
             $this->getTile()->setChestState(false);
 
-            if($this->rewardItem !== null){
-                $this->rewardItem->flagForDespawn();
+            if($this->rewardItem !== null and $this->rewardItem->isClosed() == false){
+                $this->rewardItem->close();
             }
 
             return true;
@@ -198,6 +199,7 @@ class GiftBoxEntity extends Human {
 
                 if($reward->getItem()->isNull() == false){
                     $this->rewardItem = $this->getLevel()->dropItem($this, $reward->getItem(), new Vector3(0, 0, 0), 12000);
+
                     $this->rewardItem->setNameTag($rarity . $reward->getItem()->getName());
                     $this->rewardItem->setNameTagAlwaysVisible(true);
                 }
@@ -210,8 +212,8 @@ class GiftBoxEntity extends Human {
         if($this->timeCounter > (20 * 11)){
             $this->flagForDespawn();
 
-            if($this->rewardItem !== null){
-                $this->rewardItem->flagForDespawn();
+            if($this->rewardItem !== null and $this->rewardItem->isClosed() == false){
+                $this->rewardItem->close();
             }
 
             $this->getTile()->setIsInUse(false);

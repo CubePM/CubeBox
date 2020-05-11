@@ -126,7 +126,7 @@ class CrateTile extends Spawnable {
         parent::close();
 
         if($this->displayEntity !== null){
-            $this->displayEntity->flagForDespawn();
+            $this->displayEntity->close();
         }
     }
 
@@ -174,6 +174,8 @@ class CrateTile extends Spawnable {
 
                     $dust1 = new DustParticle($pos->asVector3(), ...$this->getCrate()->getRGBA());
 
+                    $pos = $this->asVector3();
+                    
                     $pos->x = ($pos->x + 0.5) + -sin($i);
                     $pos->z = ($pos->z + 0.5) + cos($i);
 
@@ -209,6 +211,15 @@ class CrateTile extends Spawnable {
                 }
             }
             if($this->getDisplayEntity()->isClosed() == false){
+                if($this->getDisplayEntity()->isClosed()){
+                    $pos = $this->asPosition();
+                    $pos->x += 0.5;
+                    $pos->y += 2.4;
+                    $pos->z += 0.5;
+
+                    $this->displayEntity = FloatingText::spawn($pos, "");
+                }
+
                 $this->getDisplayEntity()->setNameTag($this->getCrate()->getName() . "\n\n" . TextFormat::RESET . $display);
             }
         }

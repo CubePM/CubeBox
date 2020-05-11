@@ -1,6 +1,6 @@
 ---
 name: CubeBox
-version: 1.0.1
+version: 1.1.0
 api: 3.0.0
 author: TheAz928
 main: TheAz928\CubeBox\Loader

@@ -14,21 +14,17 @@ use TheAz928\CubeBox\tile\CrateTile;
 /**
  * CubeBox: The next level crate plugin for PocketMine-MP
  * CopyRight (C)  2020 CubePM (TheAz928)
- *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * any later version.
- *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 class ConfirmOpenForm implements Form {
 
     /** @var CrateTile */
@@ -46,13 +42,22 @@ class ConfirmOpenForm implements Form {
      * @return array
      */
     public function jsonSerialize(): array {
+        $content = TextFormat::GRAY . "Open this crate for ";
+        if(($m = $this->tile->getCrate()->getMoneyCost()) > -1){
+            $content .= "$" . number_format($m);
+        }
+        if(($e = $this->tile->getCrate()->getXpCost()) > -1){
+            $content .= " and " . number_format($e) . "XP Level(s)";
+        }
+        $content .= "?";
+
         return [
             "type" => "form",
-            "title" => "CubeBox",
-            "content" => "Are you sure you want to open this crate for\n" . TextFormat::GREEN . "XP: " . TextFormat::WHITE . $this->tile->getCrate()->getXpCost() . "\n" . TextFormat::GREEN . "Money: " . TextFormat::WHITE . "$" . $this->tile->getCrate()->getMoneyCost() . "\n\n\n\n\n\n\n\n",
+            "title" => $this->tile->getCrate()->getName(),
+            "content" => $content,
             "buttons" => [
-                ["text" => "Yes"],
-                ["text" => "No"]
+                ["text" => TextFormat::DARK_GREEN . "Yes"],
+                ["text" => TextFormat::RED . "No"]
             ]
         ];
     }

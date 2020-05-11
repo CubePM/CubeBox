@@ -1,7 +1,7 @@
 <?php
 namespace TheAz928\CubeBox\entity;
 
-use pocketmine\entity\Zombie;
+use pocketmine\entity\Living;
 
 use pocketmine\event\entity\EntityDamageEvent;
 
@@ -26,7 +26,15 @@ use pocketmine\level\Position;
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-class FloatingText extends Zombie {
+class FloatingText extends Living {
+
+    public const NETWORK_ID = self::VEX;
+
+    /** @var float */
+    public $height = 1.00;
+
+    /** @var float */
+    public $width = 1.00;
 
     /** @var float */
     protected $gravity = 0.00;
@@ -42,6 +50,13 @@ class FloatingText extends Zombie {
         $entity->spawnToAll();
 
         return $entity;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string {
+        return "Floating Text";
     }
 
     protected function initEntity(): void {

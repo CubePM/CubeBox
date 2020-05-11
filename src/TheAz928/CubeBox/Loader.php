@@ -126,6 +126,8 @@ class Loader extends PluginBase implements Listener {
 
     /**
      * @param PlayerInteractEvent $event
+     * @priority MONITOR
+     * @ignoreCancelled false
      */
     public function onInteract(PlayerInteractEvent $event): void {
         $player = $event->getPlayer();
@@ -154,7 +156,8 @@ class Loader extends PluginBase implements Listener {
             $crateTile->spawnToAll();
 
             unset($this->creationSession[$player->getName()]);
-        }elseif($tile instanceof CrateTile){
+        }
+        if($tile instanceof CrateTile){
             $event->setCancelled();
 
             if($item->equals($tile->getCrate()->getKey())){
