@@ -175,7 +175,7 @@ class CrateTile extends Spawnable {
                     $dust1 = new DustParticle($pos->asVector3(), ...$this->getCrate()->getRGBA());
 
                     $pos = $this->asVector3();
-                    
+
                     $pos->x = ($pos->x + 0.5) + -sin($i);
                     $pos->z = ($pos->z + 0.5) + cos($i);
 

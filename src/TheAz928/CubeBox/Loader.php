@@ -30,21 +30,17 @@ use TheAz928\CubeBox\tile\CrateTile;
 /**
  * CubeBox: The next level crate plugin for PocketMine-MP
  * CopyRight (C)  2020 CubePM (TheAz928)
- *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * any later version.
- *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 class Loader extends PluginBase implements Listener {
 
     public const VERSION = "1.0.0";
@@ -207,11 +203,11 @@ class Loader extends PluginBase implements Listener {
      * @return bool
      */
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
-        if($sender instanceof Player){
-            $sub = array_shift($args);
+        $sub = array_shift($args);
 
-            switch($sub){
-                case "create":
+        switch($sub){
+            case "create":
+                if($sender instanceof Player){
                     if(isset($args[0]) == false){
                         $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx create <CRATE ID>");
 
@@ -227,50 +223,51 @@ class Loader extends PluginBase implements Listener {
 
                     $this->creationSession[$sender->getName()] = $crate;
                     $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Now tap a block to turn it into a crate");
-                break;
-                case "key":
-                    if(isset($args[0]) == false){
-                        $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx key <PLAYER|all> <CRATE ID> <AMOUNT>");
+                }
+            break;
+            case "key":
+                if(isset($args[0]) == false){
+                    $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx key <PLAYER|all> <CRATE ID> <AMOUNT>");
 
-                        break;
-                    }
-                    $player = $this->getServer()->getPlayer($args[0]);
+                    break;
+                }
+                $player = $this->getServer()->getPlayer($args[0]);
 
-                    if($player == null and $args[0] !== "all"){
-                        $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Player not found with name: " . $args[0]);
+                if($player == null and $args[0] !== "all"){
+                    $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Player not found with name: " . $args[0]);
 
-                        break;
-                    }
-                    if(isset($args[1]) == false){
-                        $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx key <PLAYER|all> <CRATE ID> <AMOUNT>");
+                    break;
+                }
+                if(isset($args[1]) == false){
+                    $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx key <PLAYER|all> <CRATE ID> <AMOUNT>");
 
-                        break;
-                    }
-                    $crate = $this->getCrate($args[1]);
+                    break;
+                }
+                $crate = $this->getCrate($args[1]);
 
-                    if($crate == null){
-                        $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Crate not found with ID: " . $args[1]);
+                if($crate == null){
+                    $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Crate not found with ID: " . $args[1]);
 
-                        break;
-                    }
+                    break;
+                }
 
-                    $key = clone $crate->getKey();
-                    $key->setCount(max(1, intval($args[2])));
+                $key = clone $crate->getKey();
+                $key->setCount(max(1, intval($args[2])));
 
-                    if($args[0] !== "all"){
+                if($args[0] !== "all"){
+                    $player->getInventory()->addItem($key);
+                }else{
+                    foreach($this->getServer()->getOnlinePlayers() as $player){
                         $player->getInventory()->addItem($key);
-                    }else{
-                        foreach($this->getServer()->getOnlinePlayers() as $player){
-                            $player->getInventory()->addItem($key);
-                        }
                     }
+                }
 
-                    $player->sendMessage(TextFormat::GREEN . "[CubeBox] Gave keys successfully");
-                break;
-                default:
-                    $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx key|create");
-            }
+                $player->sendMessage(TextFormat::GREEN . "[CubeBox] Gave keys successfully");
+            break;
+            default:
+                $sender->sendMessage(TextFormat::GRAY . "[CubeBox] Usage: /cbx key|create");
         }
+
 
         return true;
     }
